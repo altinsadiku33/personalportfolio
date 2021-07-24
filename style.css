@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #fcf0cc;
+  margin: 0;
+}
+nav {
+  background-color: #3d5467;
+  color: #fff;
+  display: flex;
+  justify-content: flex-end;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+nav a {
+  color: #fff;
+  margin-left: 30px;
+  text-decoration: none;
+}
+nav a:hover {
+  border-bottom: 3px solid #fff;
+}
+header {
+  height: 100vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(https://images.unsplash.com/photo-1484417894907-623942c8ee29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1489&q=80);
+  position: relative;
+}
+header::after {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+header * {
+  position: relative;
+  z-index: 1;
+}
+header h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+header p {
+  font-size: 30px;
+  margin: 0;
+}
+footer {
+  background-color: #3d5467;
+  color: white;
+  padding: 8px;
+  text-align: center;
+}
+.fa {
+  padding: 10px;
+  margin: 0 10px;
+  font-size: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.social-ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+section {
+  text-align: center;
+  padding: 40px;
+}
+section h2 {
+  margin-bottom: 0;
+}
+section p {
+  margin-top: 0;
+}
+.sbg-color {
+  background-color: #41413a;
+  color: #fff;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1080px;
+  margin: 20px auto 0;
+}
+.project {
+  margin: 20px;
+  max-width: 250px;
+}
+.project img {
+  max-width: 100%;
+}
+.project p {
+  font-size: 20px;
+  margin-top: 10px;
+}
